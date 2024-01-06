@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <script async src="/bin/index_files/tagmng8.js"></script>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="/bin/index_files/rapid02.css">
+   <link rel="apple-touch-icon" sizes="180x180" href="/index_files/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" href="/index_files/favicon/favicon-32x32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="/index_files/favicon/favicon-16x16.png" sizes="16x16">
+   <link rel="manifest" href="/bin/index_files/favicon/manifest.json">
+   <link rel="mask-icon" href="/bin/index_files/favicon/safari-pinned-tab.svg" color="#5bbad5">
+   <link rel="shortcut icon" href="/index_files/favicon/favicon.ico">
+   <meta name="msapplication-config" content="/index_files/favicon/browserconfig.xml">
+   <meta name="theme-color" content="#ffffff">
+   <meta name="format-detection" content="telephone=no">
+
+   <title>Binaire/Décimal... Convertisseur</title>
+   <meta name="description" content="Hexadecimal,decimal,octal,binary number conversions.">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <style>
+      h1 {
+         font-size: 1.6rem;
+      }
+
+      h2 {
+         font-size: 1.4rem;
+      }
+
+      h4 {
+         font-size: 1.2rem;
+      }
+
+      #calcform {
+         background: #f0f0d0;
+         padding: 20px;
+      }
+
+      /*#calcform input-group-text { padding-top:40px; }*/
+      #bit {
+         background: #ffffcc;
+         border-collapse: collapse;
+      }
+
+      #bit tr:first-child {
+         font-size: x-small;
+      }
+
+      #bit td {
+         text-align: center;
+         background: #ffffcc;
+         padding: 4px;
+      }
+
+      #bit tr:nth-child(1) td {
+         border: none;
+         background: #f0f0c0;
+      }
+
+      #bit tr:nth-child(2) td {
+         border: 1px solid #ccc;
+         cursor: pointer;
+         /*cursor:hand;*/
+      }
+
+      .btn img {
+         filter: brightness(0) invert(1);
+      }
+
+      #bitdiv {
+         display: none;
+      }
+   </style>
+
+</head>
+
+<body>
+   <div id="header">
+      <div>
+         <div id="logo"><a href="/">Aaron PESCASIO</a></div>
+         <div class="gcse-search"></div>
+         <div id="tooldiv">
+            <a href="#" onclick="OnPageSearch()"><img width="24" height="24" title="HELLO" loading="lazy"><span> HELLO
+                  :)</span></a>
+         </div>
+      </div>
+   </div>
+   <div id="wrapper">
+      <div id="nav">
+
+         <a href="https://apescasio.fr/">Home</a>&rsaquo;<a
+            href="https://apescasio.fr/bin">Binary/Decimal/Hexadecimal/Octal Converter</a>
+
+      </div>
+      <div id="lcol">
+         <div id="doc">
+
+            <h1>Binaire/Décimal/Hexadécimal/Octal Convertisseur</h1>
+            <form id="calcform" name="calcform" autocomplete="off">
+               <div class="form-group">
+                  <label>Format</label>
+                  <select id="format" name="format" class="form-control">
+                     <option>Numéro</option>
+
+                  </select>
+               </div>
+               <div id="bitdiv" class="form-group">
+                  <label for="bit">Bits toggle</label>
+                  <table id="bit">
+                     <tr>
+                        <td>31</td>
+                        <td>30</td>
+                        <td>29</td>
+                        <td>28</td>
+                        <td>27</td>
+                        <td>26</td>
+                        <td>25</td>
+                        <td>24</td>
+                        <td>23</td>
+                        <td>22</td>
+                        <td>21</td>
+                        <td>20</td>
+                        <td>19</td>
+                        <td>18</td>
+                        <td>17</td>
+                        <td>16</td>
+                        <td>15</td>
+                        <td>14</td>
+                        <td>13</td>
+                        <td>12</td>
+                        <td>11</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>0</td>
+                     </tr>
+                     <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="form-group">
+                  <label for="hex">Binaire</label>
+                  <div class="input-group">
+                     <textarea rows="2" id="bin" name="bin" oninput="input(4)" class="form-control"
+                        autofocus></textarea>
+                     <div class="input-group-append">
+                        <span class="input-group-text">2</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label for="hex">Décimal</label>
+                  <div class="input-group">
+                     <textarea rows="1" id="dec" name="dec" oninput="input(2)" class="form-control"></textarea>
+                     <div class="input-group-append">
+                        <span class="input-group-text">10</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label for="hex">Hexadécimal</label>
+                  <div class="input-group">
+                     <textarea rows="1" id="hex" name="hex" oninput="input(1)" class="form-control"></textarea>
+                     <div class="input-group-append">
+                        <span class="input-group-text">16</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label for="hex">Octal</label>
+                  <div class="input-group">
+                     <textarea rows="1" id="oct" name="oct" oninput="input(3)" class="form-control"></textarea>
+                     <div class="input-group-append">
+                        <span class="input-group-text">8</span>
+                     </div>
+                  </div>
+               </div>
+               <button type="reset" title="Reset" class="btn btn-secondary" onclick="resetall()"><img
+                     src="/index_files/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_013_remove.png"
+                     alt=""> Reset</button>
+            </form>
+
+            </table>
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+            <hr>
+
+
+            <div id="adngin-bottom_01-0"></div>
+
+
+         </div>
+
+
+      </div>
+      <div id="rcol">
+         <table id="cidrh" cellspacing="0">
+            <tr>
+               <th class="ttl">CIDR Notation</th>
+               <th class="ttl">CIDR Mask</th>
+               <th class="ttl">Max hôtes possibles</th>
+               <th class="ttl">Formule Max Hôtes Possibles</th>
+            </tr>
+            <tr>
+               <td>/8</td>
+               <td>255.0.0.0</td>
+               <td>16,777,214</td>
+               <td>2<span class="up">32-8</span> - 2</td>
+     
+            </tr>
+            <tr>
+               <td>/9</td>
+               <td>255.128.0.0</td>
+               <td>8,388,606</td>
+
+               <td>2<span class="up">32-9</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/10</td>
+               <td>255.192.0.0</td>
+               <td>4,194,302</td>
+
+               <td>2<span class="up">32-10</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/11</td>
+               <td>255.224.0.0</td>
+               <td>2,097,150</td>
+
+               <td>2<span class="up">32-11</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/12</td>
+               <td>255.240.0.0</td>
+               <td>1,048,574</td>
+
+               <td>2<span class="up">32-12</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/13</td>
+               <td>255.248.0.0</td>
+               <td>524,286</td>
+
+               <td>2<span class="up">32-13</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/14</td>
+               <td>255.252.0.0</td>
+               <td>262,142</td>
+
+               <td>2<span class="up">32-14</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/15</td>
+               <td>255.254.0.0</td>
+               <td>131,070</td>
+
+               <td>2<span class="up">32-15</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/16</td>
+               <td>255.255.0.0</td>
+               <td>65,534</td>
+
+               <td>2<span class="up">32-16</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/17</td>
+               <td>255.255.128.0</td>
+               <td>32,766</td>
+
+               <td>2<span class="up">32-17</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/18</td>
+               <td>255.255.192.0</td>
+               <td>16,382</td>
+
+               <td>2<span class="up">32-18</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/19</td>
+               <td>255.255.224.0</td>
+               <td>8,190</td>
+
+               <td>2<span class="up">32-19</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/20</td>
+               <td>255.225.240.0</td>
+               <td>4,094</td>
+
+               <td>2<span class="up">32-20</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/21</td>
+               <td>255.255.248.0</td>
+               <td>2,046</td>
+
+               <td>2<span class="up">32-21</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/22</td>
+               <td>255.255.252.0</td>
+               <td>1,022</td>
+
+               <td>2<span class="up">32-22</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/23</td>
+               <td>255.255.254.0</td>
+               <td>510</td>
+
+               <td>2<span class="up">32-23</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/24</td>
+               <td>255.255.255.0</td>
+               <td>254</td>
+
+               <td>2<span class="up">32-24</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/25</td>
+               <td>255.255.255.128</td>
+               <td>126</td>
+
+               <td>2<span class="up">32-25</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/26</td>
+               <td>255.255.255.192</td>
+               <td>62</td>
+
+               <td>2<span class="up">32-26</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/27</td>
+               <td>255.255.255.224</td>
+               <td>30</td>
+
+               <td>2<span class="up">32-27</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/28</td>
+               <td>255.255.255.240</td>
+               <td>14</td>
+
+               <td>2<span class="up">32-28</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/29</td>
+               <td>255.255.255.248</td>
+               <td>6</td>
+
+               <td>2<span class="up">32-29</span> - 2</td>
+            </tr>
+            <tr>
+               <td>/30</td>
+               <td>255.255.255.252</td>
+               <td>2</td>
+
+               <td>2<span class="up">32-30</span> - 2</td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         <a href="https://apescasio.fr/">Home</a>
+         <p>&copy;
+            <a href="https://apescasio.fr/">apescasio.fr</a>
+         </p>
+      </div>
+
+      <div id="adngin-adhesive-0"></div>
+
+
+      <script src="/bin/index_files/bignumber.min.js"></script>
+      <script>
+         var num;
+         var bitdiv = document.getElementById("bitdiv");
+         var bittbl = document.getElementById("bit");
+         var format = document.getElementById("format");
+         var hexelem = document.getElementById("hex");
+         var decelem = document.getElementById("dec");
+         var octelem = document.getElementById("oct");
+         var binelem = document.getElementById("bin");
+         window.addEventListener("DOMContentLoaded", function () {
+            num = new BigNumber(0);
+            format.onchange = function () { onformatchange(); }
+            var len = 32;
+            for (var i = 0; i < len; i++) {
+               bittbl.rows[1].cells[i].onclick = function () {
+                  var b = this.innerHTML;
+                  var k = 31 - this.cellIndex;
+                  var mask = new BigNumber(2);
+                  mask = mask.pow(k);
+                  if (b == "0") {
+                     this.innerHTML = "1";
+                     num = num.add(mask);
+                  }
+                  else {
+                     this.innerHTML = "0";
+                     num = num.sub(mask);
+                  }
+                  hexelem.value = num.toString(16).toUpperCase();
+                  input(1);
+               };
+            }
+         });
+         function onformatchange() {
+            var i = format.selectedIndex;
+            var bits = 32;
+            var width = 594;
+            if (i == 0 || i == 4) {
+               bitdiv.style.display = "none";
+            }
+            else {
+               bitdiv.style.display = "block";
+            }
+            if (i == 1) { bits = 8; width = 149; }
+            if (i == 2) { bits = 16; width = 297; }
+            for (var k = 0; k < 32 - bits; k++) {
+               bittbl.rows[0].cells[k].style.display = "none";
+               bittbl.rows[1].cells[k].style.display = "none";
+            }
+            for (var k = 32 - bits; k < 32; k++) {
+               bittbl.rows[0].cells[k].style.display = "";
+               bittbl.rows[1].cells[k].style.display = "";
+            }
+            bittbl.style.width = width + "px";
+            //input(2);
+            resetall();
+         }
+         function resetall() {
+            hexelem.value = "";
+            decelem.value = "";
+            octelem.value = "";
+            binelem.value = "";
+            var table = document.getElementById("bit");
+            num = new BigNumber(0);
+            for (var k = 0; k < 32; k++) {
+               table.rows[1].cells[k].innerHTML = "0";
+            }
+         }
+         function input(i) {
+            var ifmt = format.selectedIndex;
+            var hex = hexelem.value;
+            var dec = decelem.value;
+            var oct = octelem.value;
+            var bin = binelem.value;
+            var x;
+            hexelem.style.backgroundColor = "white";
+            decelem.style.backgroundColor = "white";
+            octelem.style.backgroundColor = "white";
+            binelem.style.backgroundColor = "white";
+            if (i == 1) {
+               if (hex == "") { resetall(); return; }
+               try {
+                  x = new BigNumber(hex, 16);
+                  x = comptonum(x);
+                  if (x == "") { throw ""; }
+               }
+               catch (err) {
+                  hexelem.style.backgroundColor = "#fff0f0";
+                  return;
+               }
+            }
+            if (i == 2) {
+               if (dec == "") { resetall(); return; }
+               try {
+                  x = new BigNumber(dec, 10);
+               }
+               catch (err) {
+                  decelem.style.backgroundColor = "#fff0f0";
+                  return;
+               }
+            }
+            if (i == 3) {
+               if (oct == "") { resetall(); return; }
+               try {
+                  x = new BigNumber(oct, 8);
+               }
+               catch (err) {
+                  octelem.style.backgroundColor = "#fff0f0";
+                  return;
+               }
+            }
+            if (i == 4) {
+               if (bin == "") { resetall(); return; }
+               try {
+                  x = new BigNumber(bin, 2);
+                  x = comptonum(x);
+                  if (x == "") { throw ""; }
+               }
+               catch (err) {
+                  binelem.style.backgroundColor = "#fff0f0";
+                  return;
+               }
+            }
+            var y = numtocomp(x);
+            if (i != 1) hexelem.value = y.toString(16).toUpperCase();
+            if (i != 2) decelem.value = x.toString(10);
+            if (i != 3) octelem.value = x.toString(8);
+            if (i != 4) binelem.value = y.toString(2);
+
+            setbits(x);
+         }
+         function comptonum(x) {
+            var ifmt = format.selectedIndex;
+            var y = new BigNumber(x);
+            if (ifmt > 0) {
+               var look = ["0", "256", "65536", "4294967296", "18446744073709551616"];
+               var max = ["0", "127", "32767", "2147483647", "9223372036854775807"];
+               if (x.gt(max[ifmt])) y = y.sub(look[ifmt]);
+               if (x.isNeg() || x.gte(look[ifmt])) y = "";
+            }
+            return y;
+         }
+         function numtocomp(x) {
+            var ifmt = format.selectedIndex;
+            var y = new BigNumber(x);
+            x = new BigNumber(x);
+            if (ifmt > 0) {
+               var look = ["0", "256", "65536", "4294967296", "18446744073709551616"];
+               var min = ["0", "-128", "-32768", "-2147483648", "-9223372036854775808"];
+               var max = ["0", "127", "32767", "2147483647", "9223372036854775807"];
+               if (x.isNeg()) y = y.add(look[ifmt]);
+               if (x.gt(max[ifmt]) || x.lt(min[ifmt])) y = "";
+            }
+            return y;
+         }
+         function setbits(x) {
+            var table = document.getElementById("bit");
+            //!!!if( x!=Math.round(x) ) 
+            x = numtocomp(x);
+            x = x.toString(2);
+            var len = x.length;
+            if (len > 32)
+               x = x.substring(len - 1 - 31, len - 1);
+
+            num = new BigNumber(0);
+
+            for (var k = 0; k < 32 - x.length; k++) {
+               table.rows[1].cells[k].innerHTML = "0";
+            }
+            for (var k = 0; k < x.length; k++) {
+               table.rows[1].cells[k + 32 - x.length].innerHTML = x.charAt(k);
+               if (x.charAt(k) == "1") {
+                  //var mask=Math.pow(2,x.length-1-k);
+                  var mask = new BigNumber(2);
+                  mask = mask.pow(x.length - 1 - k);
+                  num = num.add(mask);
+               }
+            }
+         }
+      </script>
+
+
+        <script src="/pff/include.js"></script>
+</body>
+
+</html>

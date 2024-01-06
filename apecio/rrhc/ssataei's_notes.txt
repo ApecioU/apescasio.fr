@@ -1,0 +1,142 @@
+the ssataei tldr: 
+	- Current mon:
+		- will get OHKOed
+		- cannot 3HKO you
+	- New mon:
+		- outspeeds, walls or resists all
+			- predicted move will not 2HKO or
+			- predicted move would 2HKO, but new mon is faster and has recovery move
+
+	- i havent tested any of this lmao
+	- this is just unbound AI i have no idea if RR 4.0 is the same
+
+ShouldSwitchIfOnlyBadMovesLeft: 
+		- no usable status move
+		- bunch of stuff about trapping/substitute/knock off whatever
+		- current AI cannot 3HKO
+	New switch must: wall/resist (outspeed isnt good enough)
+	
+ShouldSwitchToAvoidDeath: 
+	Criteria:
+		- must be slower or die to priority
+		- didnt just switch
+		- doesnt have dbond
+		- if paralyzed, not below 33%
+		- will not take more than 33% from hazards on reentry
+		- not below 20% if new mon doesnt outspeed+resist all
+	New switch must:
+		- outspeed, walls or resist all
+			- predicted move will not 2HKO or
+			- predicted move would 2HKO, but new mon is faster and has recovery move
+		- kill your mon with contact damage, and
+			- predicted move will not 2HKO or
+			- predicted move would 2HKO, but new mon is faster and has recovery move
+			
+ShouldSaveSweeperForLater:
+	"This is the partner to ShouldSwitchToAvoidDeath, as that function only works on mons that are slower"
+	Criteria:
+		- if paralyzed, does not have quick feet/guts
+		- is damaging class (see sweeper defn below)
+		- AI not behind sub, or behind sub but you have a sound move
+		- AI will not take more than 25% from hazards on reentry
+		- either:
+			- AI cannot OHKO you
+			- AI can OHKO you, but you have fake out 
+				- and AI can be flinched
+				- and fake out damage is at least half their max HP (how?)
+		- either:
+			- u can kill the ai (slow kill is fine)
+			- AI doesnt have useful offensive stats raised (or +3 evasion)
+				- AI isnt trapping you while youre taking passive dmg 
+					- tbh this check is for like everything i just wasnt bothered to write it
+				- AI cant set up offensive stats
+		- New switch can OHKO you (but kill flags gone) OR:
+			- current AI mon doesnt resist all your moves
+			- current AI's strongest move isnt a HP drain move
+			- if the AI can 2HKO you, it only has a 25% chance to switch
+			- else 50% chance to switch
+		- Destiny Bond
+			- ai will die but can dbond and will move first (incl prio)
+			- ai will die but will not move virst, but already has dbond active
+		- Choice Lock
+			- AI is choice locked and cannot OHKO you with its current move
+				- but it can OHKO you with one of its other moves
+				- can switch to reset choice lock
+
+ShouldSwitchWhenOffensiveStatsAreLow
+	Current mon must have one of (sweeper definition): 
+		- 3 attacks
+		- a choice item
+		- 2 attacks and at least one status/phazing/setup move
+		- NOT leechseed + protect
+	Criteria:
+		- Attack is at -3 or less + Only has physical moves
+		- Sp. Atk is at -3 or less + Only has special moves
+		- Attack is at -3 or less and Sp. Atk is also at -3 or less + Has both kinds of moves
+		- Accuracy is at -3 or less + Can't use any move with Acc 70 or more + not stall class
+	New switch must either (not as strict as others):
+		- wall/resist (both i think)
+		- outspeed + doesnt get 2HKO by your predicted move
+		
+SemiInvulnerableTroll 
+	- you're in the invuln turn of fly/phantom force/etc
+	- ai has a switch that is immune/resists (type chart only)
+	- should be doubles only? idk
+	
+CanStopLockedMove
+	- you're choice locked/encored/etc
+	- ai has a switch that is immune/resists (type chart only)
+	- i dont think this applies to status moves
+	- should be doubles only? idk
+	
+IsTakingAnnoyingSecondaryDamage
+	Current mon will not take more than 25% from hazards on reentry, then:
+	Switch out ASAP:
+		- AI is cursed
+		- AI is poisoned and it had originally poison heal, but lost it (eg entrainment)
+		- AI is on 6+ turns of toxic
+	Else 25% chance to switch:
+		- AI is leechseeded, has no offensive stat buffs and cannot OHKO
+		- New mon walls/resists all
+		- or new mon outspeeds + not oneshot 
+			- this used to require KO flags but those dont seem to be used anymore
+			
+ShouldSwitchWhenYawned
+	- AI yawned, over 25% hp, can actually be slept (eg other status, misty terrain, sleep clause, berry)
+	- AI cannot kill you before it falls asleep
+	- AI doesnt have snore/sleep talk/early bird/shed skin/misty terrain/electric terrain
+	- New mon outspeeds player (also requires new mon to oneshot?)
+	
+ShouldSwitchWhileAsleep
+	- AI doesnt have snore/sleep talk/early bird/shed skin/rest/hydration in rain
+	- new mon must not take a lot of dmg from predicted move:
+		- predicted move will not 2HKO or
+		- predicted move would 2HKO, but new mon is faster and has recovery move
+	then: if AI has either +2 atk/spatk/speed or +3 evasion
+		- 25% chance to switch
+	else 50% chance to switch
+	Notes: doesnt check if the ai can actually use its boosted stat (eg swagger special attacker)
+	also doesnt check for usual walls/resists/outspeeds flags
+	
+FindMonThatAbsorbsOpponentsMove
+	This only applies to type absorbing abilities. 
+		eg. motor drive counts as absorbing an electric move
+		ground types do not count as absorbing an electric move
+	Criteria:
+		- AI didnt just switch to type absorb
+			- note: normal switch CD and type absorb CD are different
+		- AI predicts a damaging move
+		- AI has less than +3 evasion
+		
+		- If player's mon is not a damaging class (see sweeper defn below)
+			- wont switch if AI just switched
+			- else 50% chance to switch
+		
+		- AI WONT switch if:
+			- AI can fast kill
+			- AI can slow kill while having at least +1 in any stat
+			- AI is not OHKO'd and has at least +2 in any stat
+			- AI has a sub and u cant bypass it
+			- your mon has been on the field for at least one turn, and the AI's previous move prediction was wrong
+			- your mon has a mold breaker ability, or is using a move that ignores abilities (eg moongeist beam)
+				

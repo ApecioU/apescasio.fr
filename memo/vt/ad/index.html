@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aaron PESCASIO - Mémoire</title>
+  <meta name="generator" content="VuePress 1.8.3">
+  <link rel="apple-touch-icon" size="57x57" href="/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" size="60x60" href="/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" size="72x72" href="/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" size="76x76" href="/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" size="114x114" href="/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" size="120x120" href="/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" size="144x144" href="/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" size="152x152" href="/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" size="180x180" href="/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" size="192x192" href="/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" size="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" size="96x96" href="/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" size="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/manifest.json">
+  <link rel="stylesheet" href="/memo/memo_files/style.css">
+  <link rel="stylesheet" href="/memo/memo_files/lang.css">
+  <link rel="shortcut icon" href="/memo/memo_files/logo.png" type="image/x-icon">
+  <meta name="description" content="Aaron PESCASIO - Mémoire">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="google-site-verification" content="4nm40QLVcDJmEJSAbrMfZ7fpBJZIXL1oSngBAYrZopY">
+
+  <link rel="preload" href="/memo/memo_files/style.css" as="style">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<meta name="description" content="Aaron Pescasio - Mémoire">
+<meta property="og:title" content="Aaron Pescasio">
+<meta property="og:description" content="Mémoire Administrateur">
+<meta property="og:image" content="https://www.apescasio.fr/memo/memo_files/logo.png">
+<meta property="og:url" content="https://www.apescasio.fr/memo">
+</head> 
+
+<style>
+  :root {
+    --darkreader-neutral-background: #0e1011;
+    --darkreader-neutral-text: #dcd8d3;
+    --darkreader-selection-background: #004aac;
+    --darkreader-selection-text: #edebe8;
+  }
+
+  a.sidebar-link {
+    color: rgb(176, 197, 215);
+  }
+
+
+  * {
+    scrollbar-color: #42474a #1b1e1f;
+  }
+
+  .navbar {
+    background-color: rgb(19, 21, 22);
+    border-bottom-color: rgb(49, 55, 57);
+  }
+
+  .sidebar {
+    background-color: rgb(19, 21, 22);
+    border-right-color: rgb(49, 55, 57);
+  }
+
+  .search-box input {
+    color: rgb(137, 168, 193);
+    border-color: rgb(57, 62, 64);
+    outline-color: currentcolor;
+    background-color: rgb(19, 21, 22);
+    background-image: url("https://www.apescasio.fr/memo/memo_files/search-icon.svg");
+  }
+
+
+  .navbar .site-name {
+    color: rgb(176, 197, 215);
+  }
+
+  pre {
+    background-color: rgb(18, 19, 20);
+    color: rgb(209, 204, 197);
+    border-color: rgb(110, 102, 89);
+  }
+
+  a,
+  p a code {
+    color: #9066b8;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+
+  body {
+    color: rgb(176, 197, 215);
+  }
+
+  .search-result-text-color {
+    background-color: #44484a;
+    color: rgb(176, 197, 215);
+  }
+
+
+  @media screen and (max-width: 719px) {
+    .logo {
+      margin-top: -10px;
+    }
+
+    .page-navigation {
+      flex-wrap: wrap;
+    }
+
+    .page-navigation {
+      flex-wrap: wrap;
+    }
+
+    .prevpage,
+    .nextpage {
+      flex: 1;
+      text-align: center;
+      margin: 0;
+    }
+
+    .prevpage {
+      order: 1;
+    }
+
+    .nextpage {
+      order: 2;
+    }
+  }
+</style>
+
+<body>
+
+
+
+  <!--navbar-->
+  <div class="theme-container">
+    <header class="navbar">
+      <div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+          viewBox="0 0 448 512" class="icon">
+          <path fill="currentColor"
+            d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z">
+          </path>
+        </svg></div> <a href="https://apescasio.fr/" aria-current="page"
+        class="home-link router-link-exact-active router-link-active"><img src="/memo/memo_files/logo.png" alt="AP"
+          class="logo"></a> <a href="https://apescasio.fr/memo"><span class="site-name can-hide">Mémoire</span></a>
+      <div class="links">
+        <div class="search-box"><input type="text" id="search-input" aria-label="Search" autocomplete="off"
+            spellcheck="false" value="">
+          <ul id="search-results"></ul>
+        </div>
+        <nav class="nav-links can-hide">
+          <div class="nav-item"><a href="/" aria-current="page"
+              class="nav-link router-link-exact-active router-link-active chgcolor">
+              Guide
+            </a></div>
+          <div class="nav-item"><a href="https://linkedin.com/in/aaron-pescasio" target="_blank"
+              rel="noopener noreferrer" class="nav-link external">
+              LinkedIn
+              <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                  viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                  <path fill="currentColor"
+                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                  </path>
+                  <polygon fill="currentColor"
+                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                  </polygon>
+                </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+          <div class="nav-item"><a href="https://github.com/ApecioU/" target="_blank" rel="noopener noreferrer"
+              class="nav-link external">
+              GitHub
+              <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                  viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                  <path fill="currentColor"
+                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                  </path>
+                  <polygon fill="currentColor"
+                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                  </polygon>
+                </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+          <!---->
+        </nav>
+      </div>
+    </header>
+    <div class="sidebar-mask"></div>
+    <aside class="sidebar">
+      <nav class="nav-links">
+        <div class="nav-item"><a href="/" aria-current="page"
+            class="nav-link router-link-exact-active router-link-active">
+            Guide
+          </a></div>
+        <div class="nav-item"><a href="https://linkedin.com/in/aaron-pescasio" target="_blank" rel="noopener noreferrer"
+            class="nav-link external">
+            LinkedIn
+            <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                <path fill="currentColor"
+                  d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                </path>
+                <polygon fill="currentColor"
+                  points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                </polygon>
+              </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+        <div class="nav-item"><a href="https://github.com/apeciou" target="_blank" rel="noopener noreferrer"
+            class="nav-link external">
+            GitHub
+            <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                <path fill="currentColor"
+                  d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                </path>
+                <polygon fill="currentColor"
+                  points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                </polygon>
+              </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+      </nav>
+      <div class="carbon-ads"></div>
+    <ul class="sidebar-links">
+        <li>
+          <div id="includedContent"></div>
+         
+        </li>
+        <li>
+
+        </li>
+
+      </ul>
+    </aside>
+    <main class="page">
+      <div class="theme-default-content content__default">
+        <h1 id="what-is-fuse-js"><a href="#Aaron PESCASIO" class="header-anchor">#</a> Aaron PESCASIO</h1>
+        <div><a href="https://twitter.com/apeciou" data-size="large" data-show-screen-name="false" data-dnt="true"
+            data-show-count="false" class="twitter-follow-button">Follow</a>
+          <script async="async" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <p>Dans presque tous les cours concernant le Windows serveur à l’IPI, j'ai dû réinstaller un serveur Windows
+          avec AD DS, DNS, DHCP à la main. J'ai donc décidé de créer ce script qui automatisera l'ensemble du processus
+          avec des configurations IP préconfiguré.</p>
+
+
+        <a class="pagesconst" onclick="copyCode()">
+          <h3>1ip.ps1:</h3>
+        </a>
+
+
+        <div class="code-container">
+          <pre>
+                       # Script pour automatiser/simplifier la mise en place d'un:  
+                       # Windows Serveur avec AD DS, DNS, DHCP préconfiguré
+            
+            
+            # Définir le chemin absolu du script (pour ranger le script dans un dossier à la fin)
+            
+            $ScriptPath = Convert-Path -Path $MyInvocation.MyCommand.Path
+            
+            # Demande à l'user: le nouveau nom de PC
+            
+            $nom = ""
+            
+            while ($nom -eq "") {
+                $nom = Read-Host "`nEntrez le nouveau nom de PC (ne peut pas être vide)"
+            }
+            
+            Rename-Computer $nom
+            
+            # Configure l'IP de serveur et le masque
+            
+            New-NetIPAddress -InterfaceAlias "Ethernet0" -IPAddress 192.168.31.10 -PrefixLength 24 -DefaultGateway 192.168.31.254 | Out-Null
+            
+            # Configure le DNS de serveur 
+            
+            Set-DnsClientServerAddress -InterfaceAlias "Ethernet0" -ServerAddresses 192.168.31.10 | Out-Null
+            
+            # Demander à l'user le mot de passe 
+            
+            $Password = Read-Host -Prompt "Veuillez entrer votre mot de passe"
+            
+            # Modifier le registre de Windows pour autoriser le "Autologon", cela va faire en sorte qu'après le redémarrage, le PC va s'ouvrir une session automatiquement
+            
+            $RegistryPath = 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon'
+            
+            Set-ItemProperty $RegistryPath 'AutoAdminLogon' -Value "1" -Type String
+            
+            Set-ItemProperty $RegistryPath 'DefaultUsername' -Value "$env:USERNAME" -Type String
+            
+            Set-ItemProperty $RegistryPath 'DefaultPassword' -Value "$Password" -type String
+            
+            # Créer un dossier "script" pour mettre la suite des scripts la-dessus
+            
+            New-Item -ItemType Directory -Path "C:\ap_script" -Force
+            
+            # Créer le script "2adds.ps1" qui créera le AD DS
+            
+            New-Item -ItemType File -Path "C:\ap_script\2adds.ps1" -Force | Out-Null
+            
+            # Mettre ce contenu à l'intérieur du script
+            
+            Set-Content -Path "C:\ap_script\2adds.ps1" -Value @"
+            #
+            # Script pour créer le AD DS avec "apes.loc" comme nom domaine et "APE" comme NETBIOS
+            #
+            
+            Install-WindowsFeature -name AD-Domain-Services –IncludeManagementTools
+            Install-ADDSForest ``
+            -CreateDnsDelegation:`$false ``
+            -SafeModeAdministratorPassword:(ConvertTo-SecureString -String "${Password}" -AsPlainText -Force) ``
+            -DatabasePath "C:\Windows\NTDS" ``
+            -DomainMode "WinThreshold" ``
+            -DomainName "apes.loc" ``
+            -DomainNetbiosName "APES" ``
+            -ForestMode "WinThreshold" ``
+            -InstallDns:`$true ``
+            -LogPath "C:\Windows\NTDS" ``
+            -NoRebootOnCompletion:`$false ``
+            -SysvolPath "C:\Windows\SYSVOL" ``
+            -Force:`$true
+            
+            # Supprimer la tâche planifiée "2adds" pour éviter des erreurs et des conflits
+            
+            schtasks /delete /tn "2adds" /f
+            
+            # Créer une tâche planifiée qui va s'executer à l'ouverture d'une session => la tâche planifiée va exécuter le 3ème script qui configurera le DNS Primary Zone, DNS PTR... de serveur à l'ouverture de session  
+            
+            schtasks /create /tn "3dns" /tr "powershell.exe -ExecutionPolicy Bypass -File C:\ap_script\3dns.ps1" /rl highest /sc onlogon
+            
+            # Ajouter le DefaultDomainName dans le registre pour l'Autologon
+            
+            Set-ItemProperty -Path "${RegistryPath}" 'DefaultDomainName' -Value "apes.loc" -type String
+            
+            # Redémarrer le PC
+            
+            Restart-Computer -Force
+            
+            "@
+            
+            
+            # Créer le script "3dns.ps1" qui configuera le DNS Zone de serveur et installera le DHCP également
+            
+            New-Item -ItemType File -Path "C:\ap_script\3dns.ps1" -Force | Out-Null
+            
+            # Mettre ce contenu à l'intérieur du script
+            
+            Set-Content -Path "C:\ap_script\3dns.ps1" -Value @"
+            # 
+            # Script pour mettre en place la Zone DNS, l'enregistrement PTR, DHCP... du serveur
+            #
+            
+            Add-DnsServerPrimaryZone -NetworkId "192.168.31.0/24" -ReplicationScope 'Domain'
+            
+            `$IP = (Get-NetIPAddress -InterfaceAlias "Ethernet0" -AddressFamily 'IPv4').IPV4Address
+            `$PTRIP = `$IP.Split('.',6)[3] 
+            
+            `$fqdn = (Get-ADComputer `$(hostname)).DNSHostName
+             
+            Add-DnsServerResourceRecordPtr -Name "`$PTRIP" -ZoneName "31.168.192.in-addr.arpa" -PtrDomainName "`$fqdn"
+            
+            Set-DnsClientServerAddress -InterfaceAlias "Ethernet0" -ServerAddresses 192.168.31.10, 127.0.0.1
+            
+            # Installation et configuration DHCP du serveur + création de Plage DHCP "31.100" => "31.200" 
+            
+            Install-WindowsFeature DHCP -IncludeManagementTools
+            
+            `$DNSName = "`$env:COMPUTERNAME.apes.loc"
+            
+            Add-DHCPServerInDC -DNSName `$DNSName
+            
+            Set-ItemProperty –Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ServerManager\Roles\12 –Name ConfigurationState –Value 2
+            
+            Set-DhcpServerv4OptionValue -DNSServer 192.168.31.10 -DNSDomain apes.loc -Router 192.168.31.254
+            
+            Add-DhcpServerv4Scope -Name "PlagePCs" -StartRange 192.168.31.100 -EndRange 192.168.31.200 -SubnetMask 255.255.255.0 -Description "Plage DHCP des ordinateurs du domaine APES"
+            
+            schtasks /delete /tn "3dns" /f
+            
+            # Désactiver l'Autologon et enlever le mot de passe et l'identifiant du registre Windows
+            
+            Set-ItemProperty -Path "${RegistryPath}" 'AutoAdminLogon' -Value "0" -Type String
+            
+            Set-ItemProperty -Path "${RegistryPath}" 'DefaultUsername' -Value "No" -Type String
+            
+            Set-ItemProperty -Path "${RegistryPath}" 'DefaultPassword' -Value "No" -type String
+            
+            # Mettre le 1er script dans le dossier ap_script
+            
+            Copy-Item "${ScriptPath}" C:\ap_script\1ip.ps1
+            
+            Remove-Item "${ScriptPath}"
+            
+            "@ 
+            
+            # Créer une tâche planifiée qui va s'executer à l'ouverture d'une session => la tâche planifiée va exécuter le 2ème script qui installera Active Directory à l'ouverture de session 
+            
+            schtasks /create /tn "2adds" /tr "powershell.exe -ExecutionPolicy Bypass -File C:\ap_script\2adds.ps1" /rl highest /sc onlogon
+            
+            # Redémarrer le PC
+            
+            Restart-Computer -Force
+            
+          </pre>
+
+          <button class="copy-button">Copy</button>
+        </div>
+
+
+        <!-- <h3 id="why-should-i-use-it"> Vidéo d'exécution du script:
+        </h3> -->
+
+        <br>
+        <div class="page-navigation">
+          <a href="https://apescasio.fr/memo/azure/fixadc" class="prevpage"><strong>
+              << Fix ADConnect Script</strong></a>
+          <a href="https://apescasio.fr/memo/ws/integration" class="nextpage"><strong>WS-Integration >></strong></a>
+        </div>
+
+
+
+      </div>
+    </main>
+    <script>
+      function copyCode() {
+        var code = document.querySelector('.code-container pre').textContent;
+        navigator.clipboard.writeText(code);
+      }
+      // Get all <pre> blocks
+      const codeBlocks = document.querySelectorAll('pre');
+
+      // Loop through each <pre> element
+      for (let i = 0; i < codeBlocks.length; i++) {
+        const lines = codeBlocks[i].textContent.trim().split('\n');
+        let code = '';
+
+        // Wrap each line in <code> tags and apply appropriate class
+        for (let j = 0; j < lines.length; j++) {
+          let line = lines[j].trim();
+          let className = '';
+
+          // Determine appropriate class based on contents of the line
+          if (line.startsWith('#')) {
+            className = 'powershell-comment';
+          } else {
+            // Split line into individual tokens based on whitespace
+            const tokens = line.split(/\s+/);
+            for (let k = 0; k < tokens.length; k++) {
+              const token = tokens[k];
+              if (token.startsWith('$')) {
+                // Token is a PowerShell variable
+                const variableName = token.replace('$', '');
+                // Replace the variable name in the line with a span element with the appropriate class
+                line = line.replace(token, `<span class="powershell-variable">${token}</span>`);
+              } else if (!className) {
+                // Token is a PowerShell command (if no class has been assigned yet)
+                className = 'powershell-command';
+              }
+            }
+          }
+
+          // Wrap line in <code> tags and apply class
+          code += '<code';
+          if (className) {
+            code += ' class="' + className + '"';
+          }
+          code += '>' + line + '</code>\n';
+        }
+
+        // Replace the original <pre> content with the wrapped code
+        codeBlocks[i].innerHTML = code;
+      }
+
+
+    </script>
+    <script src="/memo/memo_files/script.js"></script>
+    <script src="/memo/memo_files/nav.js"></script>
+    <script src="/pff/include.js"></script>
+    <script>
+      $(function () {
+        $("#includedContent").load("/memo/memo_files/headermemo.txt");
+      });
+    </script>
+</body>
+
+</html>

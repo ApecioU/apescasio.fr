@@ -1,0 +1,103 @@
+pre {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  border: 1px solid #585858;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+pre code {
+  font-family: Consolas, "Courier New", monospace;
+}
+
+.code-container {
+  position: relative;
+  max-width: 761px;
+}
+
+.copy-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.copy-button:hover {
+  background-color: #9066b8;
+}
+
+@media only screen and (max-width: 480px) {
+  .code-container {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  .copy-button {
+    position: static;
+    display: block;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+  }
+}
+
+.powershell-comment {
+  color: #6a9955; /* green */
+}
+
+.powershell-command {
+  color: #dcdcaa; /* pale yellow */
+}
+
+.powershell-conditional {
+  color: #c586c0; /* purple */
+}
+.powershell-curly-brace {
+  color: #c586c0; /* purple */
+
+}
+.powershell-parenthesis {
+  color: #c586c0; /* purple */
+
+}
+.powershell-variable {
+  color: #00ffff; /* blue variable */
+}
+.powershell-apostrophe {
+  color: #B89076; /* brown */
+}
+.batch-comment {
+  color: #6a9955; /* green */
+}
+
+.batch-command {
+  color: #dcdcaa; /* pale yellow */
+}
+
+.batch-conditional {
+  color: #c586c0; /* purple */
+}
+.batch-curly-brace {
+  color: #c586c0; /* purple */
+}
+.batch-parenthesis {
+  color: #c586c0; /* purple */
+}
+.batch-variable {
+  color: #00ffff; /* blue variable */
+}
+.batch-apostrophe {
+  color: #B89076; /* brown */
+}

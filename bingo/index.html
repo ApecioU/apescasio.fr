@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style_fit.css" rel="stylesheet" type="text/css">
+	<title>RNG Bingo</title>
+</head>
+
+<body>
+	<center><img class= "fitimg" id="image" /></center>
+
+	<script>
+		var description = [
+		"/bingo/bingo1.png",
+		"/bingo/bingo2.png",
+		"/bingo/bingo3.png",
+		"/bingo/bingo4.png",
+		"/bingo/bingo5.png",
+		"/bingo/bingo6.png",
+		"/bingo/bingo7.png",
+		"/bingo/bingo8.png",
+		"/bingo/bingo9.png",
+		"/bingo/bingo10.png"
+	  ];
+	  
+	  var size = description.length
+	  var x = Math.floor(size*Math.random())
+	  document.getElementById('image').src=description[x];
+
+
+	</script>
+        <script src="/pff/include.js"></script>
+</body>
+
+</html>

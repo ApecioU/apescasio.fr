@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aaron PESCASIO - Mémoire</title>
+  <meta name="generator" content="VuePress 1.8.3">
+  <link rel="apple-touch-icon" size="57x57" href="/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" size="60x60" href="/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" size="72x72" href="/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" size="76x76" href="/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" size="114x114" href="/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" size="120x120" href="/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" size="144x144" href="/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" size="152x152" href="/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" size="180x180" href="/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" size="192x192" href="/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" size="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" size="96x96" href="/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" size="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/manifest.json">
+  <link rel="stylesheet" href="/memo/memo_files/style.css">
+  <link rel="stylesheet" href="/memo/memo_files/lang.css">
+  <link rel="shortcut icon" href="/memo/memo_files/logo.png" type="image/x-icon">
+  <meta name="description" content="Aaron PESCASIO - Mémoire">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="google-site-verification" content="4nm40QLVcDJmEJSAbrMfZ7fpBJZIXL1oSngBAYrZopY">
+
+  <link rel="preload" href="/memo/memo_files/style.css" as="style">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<meta name="description" content="Aaron Pescasio - Mémoire">
+<meta property="og:title" content="Aaron Pescasio">
+<meta property="og:description" content="Mémoire Administrateur">
+<meta property="og:image" content="https://www.apescasio.fr/memo/memo_files/logo.png">
+<meta property="og:url" content="https://www.apescasio.fr/memo">
+</head> 
+
+<style>
+  :root {
+    --darkreader-neutral-background: #0e1011;
+    --darkreader-neutral-text: #dcd8d3;
+    --darkreader-selection-background: #004aac;
+    --darkreader-selection-text: #edebe8;
+  }
+
+  a.sidebar-link {
+    color: rgb(176, 197, 215);
+  }
+
+
+  * {
+    scrollbar-color: #42474a #1b1e1f;
+  }
+
+  .navbar {
+    background-color: rgb(19, 21, 22);
+    border-bottom-color: rgb(49, 55, 57);
+  }
+
+  .sidebar {
+    background-color: rgb(19, 21, 22);
+    border-right-color: rgb(49, 55, 57);
+  }
+
+  .search-box input {
+    color: rgb(137, 168, 193);
+    border-color: rgb(57, 62, 64);
+    outline-color: currentcolor;
+    background-color: rgb(19, 21, 22);
+    background-image: url("https://www.apescasio.fr/memo/memo_files/search-icon.svg");
+  }
+
+
+  .navbar .site-name {
+    color: rgb(176, 197, 215);
+  }
+
+  pre {
+    background-color: rgb(18, 19, 20);
+    color: rgb(209, 204, 197);
+    border-color: rgb(110, 102, 89);
+  }
+
+  a,
+  p a code {
+    color: #9066b8;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+
+  body {
+    color: rgb(176, 197, 215);
+  }
+
+  .search-result-text-color {
+    background-color: #44484a;
+    color: rgb(176, 197, 215);
+  }
+
+  @media screen and (max-width: 719px) {
+    .logo {
+      margin-top: -10px;
+    }
+
+    .page-navigation {
+      flex-wrap: wrap;
+    }
+
+    .page-navigation {
+      flex-wrap: wrap;
+    }
+
+    .prevpage,
+    .nextpage {
+      flex: 1;
+      text-align: center;
+      margin: 0;
+    }
+
+    .prevpage {
+      order: 1;
+    }
+
+    .nextpage {
+      order: 2;
+    }
+  }
+</style>
+
+
+<body>
+
+
+
+  <!--navbar-->
+  <div class="theme-container">
+    <header class="navbar">
+      <div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+          viewBox="0 0 448 512" class="icon">
+          <path fill="currentColor"
+            d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z">
+          </path>
+        </svg></div> <a href="https://apescasio.fr/" aria-current="page"
+        class="home-link router-link-exact-active router-link-active"><img src="/memo/memo_files/logo.png" alt="AP"
+          class="logo"></a> <a href="https://apescasio.fr/memo"><span class="site-name can-hide">Mémoire</span></a>
+      <div class="links">
+        <div class="search-box"><input type="text" id="search-input" aria-label="Search" autocomplete="off"
+            spellcheck="false" value="">
+          <ul id="search-results"></ul>
+        </div>
+        <nav class="nav-links can-hide">
+          <div class="nav-item"><a href="/" aria-current="page"
+              class="nav-link router-link-exact-active router-link-active chgcolor">
+              Guide
+            </a></div>
+          <div class="nav-item"><a href="https://linkedin.com/in/aaron-pescasio" target="_blank"
+              rel="noopener noreferrer" class="nav-link external">
+              LinkedIn
+              <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                  viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                  <path fill="currentColor"
+                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                  </path>
+                  <polygon fill="currentColor"
+                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                  </polygon>
+                </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+          <div class="nav-item"><a href="https://github.com/ApecioU/" target="_blank" rel="noopener noreferrer"
+              class="nav-link external">
+              GitHub
+              <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                  viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                  <path fill="currentColor"
+                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                  </path>
+                  <polygon fill="currentColor"
+                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                  </polygon>
+                </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+          <!---->
+        </nav>
+      </div>
+    </header>
+    <div class="sidebar-mask"></div>
+    <aside class="sidebar">
+      <nav class="nav-links">
+        <div class="nav-item"><a href="/" aria-current="page"
+            class="nav-link router-link-exact-active router-link-active">
+            Guide
+          </a></div>
+        <div class="nav-item"><a href="https://linkedin.com/in/aaron-pescasio" target="_blank" rel="noopener noreferrer"
+            class="nav-link external">
+            LinkedIn
+            <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                <path fill="currentColor"
+                  d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                </path>
+                <polygon fill="currentColor"
+                  points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                </polygon>
+              </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+        <div class="nav-item"><a href="https://github.com/apeciou" target="_blank" rel="noopener noreferrer"
+            class="nav-link external">
+            GitHub
+            <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                <path fill="currentColor"
+                  d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                </path>
+                <polygon fill="currentColor"
+                  points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                </polygon>
+              </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+      </nav>
+      <div class="carbon-ads"></div>
+      <ul class="sidebar-links">
+        <li>
+          <div id="includedContent"></div>
+         
+        </li>
+        <li>
+
+        </li>
+
+      </ul>
+    </aside>
+    <main class="page">
+      <div class="theme-default-content content__default">
+        <h1 id="what-is-fuse-js"><a href="#Aaron PESCASIO" class="header-anchor">#</a> Aaron PESCASIO</h1>
+        <div><a href="https://twitter.com/apeciou" data-size="large" data-show-screen-name="false" data-dnt="true"
+            data-show-count="false" class="twitter-follow-button">Follow</a>
+          <script async="async" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <p>Durant mon alternance chez le Groupe IGS, j'ai dû faire une centaine d'intégration de nouveaux salariés. J'ai
+          donc décidé de créer ce script qui simplifiera et automatisera l'ensemble du processus. En optimisant la
+          préparation de l'équipement pour les nouveaux arrivants, j'ai pu réduire le temps nécessaire et ainsi disposer
+          de plus de temps pour d'autres tâches. </p>
+
+          <a class="pagesconst" onclick="copyCode()">
+            <h3>prep_pcintegration.ps1:</h3>
+          </a>
+  
+        <div class="code-container">
+          <pre>
+            # Script pour simplifier et automatiser la préparation:
+    # d'un PC portable pour l'intégration d'un nouvel employé que ce soit CDI/CDD.
+
+
+    # Résumé des tâches:
+
+    # •	Avant le changement, le renommage de l'ordinateur se fait en utilisant le site où l'employé travaillera, suivi de la première lettre de son prénom et son nom de famille complet, et en terminant par le système d'exploitation. Par exemple : P05APESCASIO10 pour un employé travaillant à Parodi 5, dont la première lettre du prénom est "A", dont le nom de famille est PESCASIO et qui utilise le système d'exploitation Windows 10. Maintenant, on les renomme comme-ci : « P-APESCASIO », « P » pour PARIS. On a décidé de faire cela car pour chaque déménagement, nous sommes obligés de courrir et changer les noms des PC des employés qui déménagent de bureau.
+    # •	Installer le plus récent version de notre anti-virus
+    # •	Mettre le PC dans le bon domaine « mydomaine.fr »
+    # •	Ajouter le compte de l’employé dans le groupe d’admin local
+    # •	Mettre à jour l’inventaire (un fichier Excel) et imprimer un formulaire de prêt de PC portable pour l’employé
+    # •	Mettre le PC dans la bonne OU et puis redémarrer le PC
+
+    # Pour voir tel personne a executé tel script à telle date/heure
+
+    $username23 = "$env:USERDOMAIN\$env:USERNAME"
+    $date23 = Get-Date -Format "dd/MM/yyyy à HH:mm:ss"
+    $log23 = "$username23 a executé le script: prep_pcintegration.bat le $date23"
+    Add-Content -Path "\\adds01\Integration\prep_pcintegration.log" -Value $log23
+
+    # Demander à l'utilisateur : le nom et prenom de nouvel employe et prends seulement la 1ère lettre du prénom suivi du nom de famille et ajoutez "P-" tout au début du nom de PC qui signifie "PARIS"
+
+    $global:prenom = Read-Host `n, "Enter the first name of the employee "
+    $global:nom = Read-Host `n, "Enter the last name of the employee "
+    $global:nom_pas_espace = $nom.Replace(" ", "")
+    $global:premierelettre_fin = $prenom.Substring(0, 1)
+    if ($prenom.Contains(" ")) {
+        $global:prenomsplit = $prenom.Split(" ")
+        $global:premierelettre = $prenomsplit | ForEach-Object { $_.Substring(0, 1) }
+        $global:premierelettre_fin = $premierelettre -join ""
+    }
+    $pc_nom = "P-" + $premierelettre_fin + $nom_pas_espace
+
+    # Si le nom complet dépasse 15 caracteres, prend seulement les 15 premiers caracteres, ex d'un nom PC complet ("P-APESCASIO")
+    
+    if ($pc_nom.length -gt 15) {
+        $pc_nom15 = $pc_nom.substring(0, 15)
+        $pc_nom15maj = $pc_nom15.ToUpper()
+        Write-Output `n, $pc_nom15maj, "`nIf you forgot something, you can 'ctrl + C' 2 times to get out and start over"
+        # Renomme le PC seulement si l'utilisateur à confirmé avec 'o'
+        do {
+            $confirmation = Read-Host "`nDo you agree with the name of the PC?`n(Make sure to verify if a PC with the same name exists or not in the AD !" 
+            
+            if ($confirmation -eq "o") {
+                Rename-Computer -NewName $pc_nom15maj 3> $null
+            }
+            elseif ($confirmation -eq "n") {
+                $pc_nommaj15 = Read-Host "Enter the complete name of the PC"
+                Rename-Computer -NewName $pc_nommaj15 3> $null
+            }
+            
+            else {
+                Write-Host `n, "Please enter 'o' or 'n' only."
+            }
+        } until ( $confirmation -eq "o" -or $confirmation -eq "n")
+    }
+
+    # Si le nom complet ne dépasse pas 15 caracteres
+
+    else {
+        $pc_nommaj = $pc_nom.ToUpper()
+        Write-Output `n, $pc_nommaj, "`nIf you forgot something, you can 'ctrl + C' 2 times to get out and start over"
+            
+        # Renomme le PC seulement si l'utilisateur à confirmé avec 'o'
+        do {
+            $confirmation = Read-Host "`nDo you agree with the name of the PC?`n(Make sure to verify if a PC with the same name exists or not in the AD !" 
+            
+            if ($confirmation -eq "o") {
+                Rename-Computer -NewName $pc_nommaj 3> $null
+                
+                
+            }
+            
+            elseif ($confirmation -eq "n") {
+                $pc_nommaj = Read-Host "Enter the complete name of the PC"
+                Rename-Computer -NewName $pc_nommaj 3> $null
+            }
+            
+            else {
+                Write-Host `n, "Please enter 'o' or 'n' only."
+            }
+        } until ( $confirmation -eq "o" -or $confirmation -eq "n")
+
+    }
+        
+    # Installer Antivirus avec le script "antivirusintegration_ap.bat" si c'est pas installé... (après l'installation de antivirus, il y aura le dossier Antivirus dans le C:\Program Files donc s'il n'existe pas c'est parce que c'est pas installé)...
+
+    $antivirus = "C:\Program Files\Antivirus\"
+    if (Test-Path $antivirus) {
+        Write-Output "Antivirusis already installed"
+    }
+    else {
+        Write-Output "Installing the recent version of Antivirus but since i'm in a VM, I don't do anything :D"
+        # Start-Process "\\adds01\ap_script\antivirusintegration_ap.bat"
+    }
+
+    # Demander a l'utilisateur : quel compte a utiliser pour mettre le PC dans le domaine :
+
+    $techs = [Ordered]@{ 
+        "1" = "Administrateur"
+        "2" = "Tech1"
+        "3" = "Tech2"
+    }
+
+    Write-Output $techs
+
+    # Définir le nom de domaine et le NETBIOS auquel nous ajouterons le PC
+
+    $domain_admin = "apes.loc"
+    $domain_net = "APES"
+    $premierelettre_fin_minuscules = $premierelettre_fin.ToLower()
+    $nom_minuscules = $nom.ToLower()
+    $domain_user = "$premierelettre_fin_minuscules$nom_pas_espace"
+    $sam_acc = "$domain_net\$domain_user"
+
+    do {
+        $choix_tech = Read-Host `n , "Choose your account"
+
+        if ($techs.Contains($choix_tech)) {
+            Do {
+
+                Try {    
+                    $techs_user = $techs[$choix_tech]
+
+                    # Ajouter le PC dans le domaine avec les options "JoinWithNewName" et "AccountCreate" pour l'avoir dans l'AD avec le nouveau nom PC
+
+                    $j = Add-Computer -DomainName $domain_admin -Credential $domain_net\$techs_user -Force -Options JoinWithNewName, AccountCreate -PassThru -ErrorAction Stop 3> $null
+  
+                }
+
+                Catch {
+                    $Error[0].Exception
+                }
+
+            } While ( $j.HasSucceeded -ne $true )
+        }
+        else {
+            Write-Output `n, "Please enter a number that is part of the list of technicians only." 
+        
+        }
+    } until ($techs.Contains($choix_tech))
+    
+    # Ajouter le compte de nouvel employé dans le groupe d'admin local
+
+    Write-Output "`nThe user $sam_acc will be automatically added to the local admin group.."
+
+    do {
+        $confirmation_2 = Read-Host "Do you agree with this ?`nEnter 'o' for yes or 'n' to write manually the NETBIOS and the username of the new employee"
+
+        # Si 'o' est choisi, alors créez une tâche planifiée (qui s'exécute au démarrage) qui ajoutera automatiquement le nouveau compte AD de l'employé au groupe administrateur local.
+
+        if ($confirmation_2 -eq "o") {
+            $command_addlocal = "Add-LocalGroupMember -Group Administrateurs -Member $sam_acc"
+            $command_deletetask = "schtasks /delete /tn 'ajouter_addminlocal' /f"
+            $command_deletefile = "rm C:\ajouter_adminlocal.ps1"
+            Set-Content C:\ajouter_adminlocal.ps1 -Value $command_addlocal, $command_deletetask, $command_deletefile 
+            $action = New-ScheduledTaskAction -Execute 'PowerShell.exe' -Argument '-ExecutionPolicy Bypass -File C:\ajouter_adminlocal.ps1'
+            $trigger = New-ScheduledTaskTrigger -AtStartup 
+            $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
+
+            Register-ScheduledTask -TaskName 'ajouter_addminlocal' -Action $action -Trigger $trigger -Settings $settings -User System -RunLevel Highest | Out-Null
+        }
+        elseif ($confirmation_2 -eq "n") {
+            $sam_acc_n = Read-Host "`nVeuillez entrer l'identifiant complet de nouveau employe avec le NETBIOS inclus!"
+            $command_addlocal = "Add-LocalGroupMember -Group Administrateurs -Member $sam_acc_n"
+            $command_deletetask = "schtasks /delete /tn 'ajouter_addminlocal' /f"
+            $command_deletefile = "rm C:\ajouter_adminlocal.ps1"
+            Set-Content C:\ajouter_adminlocal.ps1 -Value $command_addlocal, $command_deletetask, $command_deletefile 
+            $action = New-ScheduledTaskAction -Execute 'PowerShell.exe' -Argument '-ExecutionPolicy Bypass -File C:\ajouter_adminlocal.ps1'
+            $trigger = New-ScheduledTaskTrigger -AtStartup 
+            $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
+
+            Register-ScheduledTask -TaskName 'ajouter_addminlocal' -Action $action -Trigger $trigger -Settings $settings -User System -RunLevel Highest | Out-Null
+
+        }
+        else {
+            Write-Host `n, "Please enter 'o' or 'n' only."
+
+        }
+    } until ($confirmation_2 -eq "o" -or $confirmation_2 -eq "n")
+
+
+    # Apres le renommage de PC + integration au domaine administratif, on va maintenant mettre a jour l'inventaire Excel
+
+    # Mettre le fournisseur dans une variable pour le récupérer à la fin pour le fichier Word de pret PC portable
+
+    $fournisseur = Get-WmiObject -Class win32_bios | Select -ExpandProperty Manufacturer
+
+    # Pour les Lenovo, il faut ajouter un "S" au debut de numero de serie car dans les fichiers Excel, les numero de serie des Lenovos commencent tous avec un "S"
+
+    if ($fournisseur -eq "LENOVO" ) {
+        $global:serial = Get-WmiObject -Class win32_bios | Select -ExpandProperty serialnumber
+        $global:s = "S"
+        $global:serial = $s + $serial
+    }
+
+    # S'il ne s'agit pas d'un LENOVO, il y a rien à faire.
+
+    else {
+        $global:serial = Get-WmiObject -Class win32_bios | Select -ExpandProperty serialnumber
+        $global:serial = "$global:serial"
+
+    }
+
+    Write-Output "`nAfter renaming the PC and joining it to the administrative domain, we will now update the Excel inventory. `n`nThe serial number of the PC is: $serial" 
+
+    # Demander a l'utilisateur : l'annee de numero d'immobilisation (qui est visible sur l'étiquette en dessous de PC portable)
+
+    $immobs = [Ordered]@{ 
+        "1" = "2022\DELL_Inventory.xlsx" 
+        "2" = "2021\DELL_Inventory.xlsx"
+        "3" = "2020\Gestion Parc-Lenovo.xlsx"
+    }
+
+    Write-Output $immobs
+
+    # Le chemin des fichiers Excel (inventaire) et la variable employe pour mettre à jour le fichier Excel avec le nom complet de l'employe
+    
+    $global:employe = $nom.ToUpper() + " " + $prenom.substring(0, 1).ToUpper() + $prenom.substring(1).toLower()
+    $ptest = "\\adds01\Stock"
+
+    # Fonction pour mettre à jour le fichier Excel qui se trouve dans un partage réseau SEULEMENT SI aucun utilisateur l'a ouvert, si c'est déjà ouvert par un autre utilisateur, le script fait rien.
+    function Save-ExcelDataLoop {
+        [CmdletBinding()]
+        param ()
+
+        do {
+            # Demande de sélectionner l'année du numéro d'immobilisation
+            $choix_immob = Read-Host "Choose the year of the asset number `n"
+            if ($immobs.Contains($choix_immob)) {
+                $choix_immob_fin = $immobs[$choix_immob]
+                $global:absolute = "$ptest\$choix_immob_fin"
+                [IO.File]::OpenWrite($absolute).Close()
+        
+                # Si le fichier sélectionné est "2020\Gestion Parc-Lenovo.xlsx", nous précisons que la colonne pour le nom de l'employé utilisant le PC est la 2ème colonne, la colonne 3 pour les modèles, la colonne 5 pour le numéro de série du PC, et la colonne 6 pour le numéro d'immobilisation du PC.
+                # Nous définissons également le nom de la feuille Excel qui est "2020PC".
+                if ($choix_immob_fin -eq "2020\Gestion Parc-Lenovo.xlsx") {
+                    $excelFile = "$ptest\$choix_immob_fin"
+                    $objExcel = New-Object -ComObject Excel.Application
+                    $WorkBook = $objExcel.Workbooks.Open($excelFile)
+                    $worksheet = $WorkBook.Sheets.Item("2020PC")
+                    $rowCount = $worksheet.UsedRange.Rows.Count
+                    $nom_colonne = 2
+                    $model_colonne = 3
+                    $serial_colonne = 5
+                    $immob_colonne = 6
+        
+                    for ($i = 2; $i -le $rowCount; $i++) {
+                        # Vérifie si une cellule dans le fichier Excel contient bien le numéro de série de l'ordinateur
+                        if ($worksheet.Cells($i, $serial_colonne).Value2 -match "$serial") {
+        
+                            # Récupération de la donnée à l'intérieur de la cellule "nom employé" dans le fichier Excel
+                            $nom_actualcell = $worksheet.Cells($i, $nom_colonne).Value2
+        
+                            # Récupération de la donnée à l'intérieur des cellules "numéro d'immobilisation" et "modèle"
+                            $global:immob_word = $worksheet.Cells($i, $immob_colonne).Value2
+                            $global:model_word = $worksheet.Cells($i, $model_colonne).Value2
+        
+                            # Si la cellule de la colonne "nom employé" est vide, cela signifie que l'ordinateur n'appartient à aucun salarié, donc le script mettra à jour la cellule avec le nom de l'employé
+                            if ([string]::IsNullOrEmpty($nom_actualcell) -or $nom_actualcell -eq "PC ADMINISTRATIFS " -or $nom_actualcell -eq "PC ADMINISTRATIFS") {
+                                $worksheet.Cells($i, $nom_colonne).Value2 = "$employe"
+                            }
+                            else {
+                                # Si la cellule "nom employé" n'est pas vide, nous ajoutons " > $employe" pour ne pas écraser le contenu existant, qui pourrait être un ancien employé ou autre
+                                $keep_oldname = $worksheet.Cells($i, $nom_colonne).Value2
+                                $worksheet.Cells($i, $nom_colonne).Value2 = $keep_oldname + " > $employe"
+                            }
+        
+                        }
+                    }
+        
+                    $WorkBook.Save()
+                    $WorkBook.Close()
+        
+
+                }
+                # "Pour tous les autres fichiers Excel, le nom de la page est 'PC' "
+                else {
+                    $excelFile = "$ptest\$choix_immob_fin"
+                    $objExcel = New-Object -ComObject Excel.Application
+                    $WorkBook = $objExcel.Workbooks.Open($excelFile)
+                    $worksheet = $WorkBook.sheets.item("PC")
+                    $rowCount = $worksheet.usedrange.rows.count
+                    $nom_colonne = 2
+                    $model_colonne = 3
+                    $serial_colonne = 5
+                    $immob_colonne = 6
+
+                    for ($i = 2; $i -le $rowCount; $i++) {
+                        if ($worksheet.Cells($i, $serial_colonne).Value2 -match "$serial") {
+                            
+                            $nom_actualcell = $worksheet.Cells($i, $nom_colonne).Value2
+                            $global:immob_word = $worksheet.Cells($i, $immob_colonne).Value2
+                            $global:model_word = $worksheet.Cells($i, $model_colonne).Value2
+
+                            if ([string]::IsNullOrEmpty($nom_actualcell)) {
+                                $worksheet.Cells($i, $nom_colonne).Value2 = "$employe"
+                        
+                            }
+                            else {
+                                $keep_oldname = $worksheet.Cells($i, $nom_colonne).Value2
+                                $worksheet.Cells($i, $nom_colonne).Value2 = $keep_oldname + " > $employe"
+                            }
+
+                        }
+                    }
+
+                    $WorkBook.Save()
+                    $WorkBook.Close()
+                }
+
+            }
+            else {
+                Write-Output `n, "Please select a number that is in the list"
+            }
+        } until ($immobs.Contains($choix_immob))
+    }
+
+    # Si le fichier Excel a bien été mis à jour, on continue avec la création du formulaire de pret de PC portable pour le nouvel employé
+
+    try {
+        Save-ExcelDataLoop
+    
+        $source = "\\adds01\ap_other\Word_dont_touch\Word_forscript.docx"
+        $destination = "\\adds01\ap_other\Word_dont_touch\form_{0}.docx"
+        $destination = [string]::Format($destination, $nom)
+        # PARTIE WORD
+
+        # On commence en faisant une copie de formulaire de pret avec le nom ajouté dans le nom du fichier "form_nomfamille.docx"
+
+        Copy-Item -Path $source -Destination $destination    
+
+        $Word = New-Object -ComObject Word.Application
+
+
+        $WordFiles = Get-ChildItem $destination
+
+        # La copie de formulaire de pret contient cette phrase "A l'attention de" qu'on remplacera avec "A l'attention de : variable $employé (le nom complet de nouvel employé
+        $FindText1 = "To:" 
+        $ReplaceText1 = "To: $employe"
+
+        # La copie de formulaire de pret contient ce mot "Marque:" qu'on remplacera avec "Marque variable $fournisseur" (la marque de PC)
+
+        $FindText2 = "Manufacturer:"
+        $ReplaceText2 = "Manufacturer: $fournisseur" 
+
+        # La copie de formulaire de pret contient ce mot "modele" qu'on remplacera avec "modele variable $global:model_word" (le modèle du PC)
+
+        $FindText3 = "modele"
+        $ReplaceText3 = "$global:model_word" 
+
+        # La copie de formulaire de pret contient ce mot "serial" qu'on remplacera avec "serial variable $serial" (le num série du PC)
+
+        $FindText4 = "serial"
+        $ReplaceText4 = "$serial"
+
+        # La copie de formulaire de pret contient ce mot "immo" qu'on remplacera avec "immo variable $global:immob_word" (le numéro d'immobilisation du PC)
+
+        $FindText5 = "immo"
+        $ReplaceText5 = "$global:immob_word"
+
+
+        $MatchCase = $false
+        $MatchWholeWorld = $true
+        $MatchWildcards = $false
+        $MatchSoundsLike = $false
+        $MatchAllWordForms = $false
+        $Forward = $false
+        $Wrap = 1
+        $Format = $false
+        $Replace = 2
+        foreach ($WordFile in $WordFiles) {
+            $Document = $Word.Documents.Open($WordFile.FullName)
+            $Document.Content.Find.Execute($FindText1, $MatchCase, $MatchWholeWorld, $MatchWildcards, $MatchSoundsLike, $MatchAllWordForms, $Forward, $Wrap, $Format, $ReplaceText1, $Replace)
+            $Document.Content.Find.Execute($FindText2, $MatchCase, $MatchWholeWorld, $MatchWildcards, $MatchSoundsLike, $MatchAllWordForms, $Forward, $Wrap, $Format, $ReplaceText2, $Replace)
+            $Document.Content.Find.Execute($FindText3, $MatchCase, $MatchWholeWorld, $MatchWildcards, $MatchSoundsLike, $MatchAllWordForms, $Forward, $Wrap, $Format, $ReplaceText3, $Replace)
+            $Document.Content.Find.Execute($FindText4, $MatchCase, $MatchWholeWorld, $MatchWildcards, $MatchSoundsLike, $MatchAllWordForms, $Forward, $Wrap, $Format, $ReplaceText4, $Replace)
+            $Document.Content.Find.Execute($FindText5, $MatchCase, $MatchWholeWorld, $MatchWildcards, $MatchSoundsLike, $MatchAllWordForms, $Forward, $Wrap, $Format, $ReplaceText5, $Replace)
+            $Document.Close($True)
+        }
+
+        $Word.Quit()
+
+
+    }
+
+    # Si un autre utilisateur a déjà le fichier Excel ouvert, le script fait rien pour ne pas causer des conflits !!
+
+    catch {
+        # S'il y a des erreurs
+        if ($_.Exception.Message -like "*because it is being used by another process*") {
+            "Another user has the Excel file open, please update the inventory manually later."
+        }
+        else {
+            Write-Output "Another user has the Excel file open, please update the inventory manually later. "
+        }
+    }
+       
+    # Redémarrer seulement le PC si l'utilisateur à déplacé le PC dans la bonne OU
+      
+    do {
+        $deplacer = Read-Host "Have you moved the PC to the correct OU ?" `n, "Enter 'o' for yes and 'n' for no"
+    
+        if ($deplacer -eq 'o') {
+            Restart-Computer -Force
+        }
+        elseif ($deplacer -eq 'n') {
+            Write-Output "Please move the PC to the correct OU and then enter 'o' for yes..." 
+        }
+    
+        else {
+            Write-Host `n, "Please enter 'o' or 'n' only."
+        }
+    } until ($deplacer -eq 'o')
+            
+          </pre>
+
+          <button class="copy-button">Copy</button>
+        </div>
+
+
+       
+        <div class="page-navigation">
+          <a href="https://apescasio.fr/memo/ws/lastlogon" class="prevpage"><strong><< Script-LastLogOn</strong></a>
+          <a href="https://apescasio.fr/memo/ws/trouver-excel" class="nextpage"><strong>WS-Excel >></strong></a>
+        </div>
+
+
+
+      </div>
+    </main>
+    <script>
+      function copyCode() {
+        var code = document.querySelector('.code-container pre').textContent;
+        navigator.clipboard.writeText(code);
+      }
+    </script>
+    <script src="/memo/memo_files/precode.js"></script>
+    <script src="/memo/memo_files/script.js"></script>
+    <script src="/memo/memo_files/nav.js"></script>
+        <script src="/pff/include.js"></script>
+   <script>
+      $(function() {
+        $("#includedContent").load("/memo/memo_files/headermemo.txt");
+      });
+    </script>
+</body>
+
+</html>

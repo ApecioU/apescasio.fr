@@ -1,0 +1,90 @@
+<section class="sidebar-group depth-0">
+    <p class="sidebar-heading open"><span>Azure Active Directory</span>
+      <!---->
+    </p>
+    <ul class="sidebar-links sidebar-group-items">
+      <li><a href="https://apescasio.fr/memo/azure" class="sidebar-link">Procédure pour la mise en place d'un Azure AD
+        </a>
+        <ul class="sidebar-sub-headers"></ul>
+      </li>
+      <li><a href="https://apescasio.fr/memo/azure/fixadc" class="sidebar-link">Procédure pour synchroniser des utilisateurs Office 365 déjà existants avec l'AD on-premise (local)
+        </a>
+        <ul class="sidebar-sub-headers"></ul>
+      </li>
+
+
+    </ul>
+  </section>
+</li>
+
+<section class="sidebar-group depth-0">
+    <p class="sidebar-heading open"><span>Virtualisation</span>
+      <!---->
+    </p>
+    <ul class="sidebar-links sidebar-group-items">
+      <li><a href="https://apescasio.fr/memo/vt/ad" class="sidebar-link">Script d'installation Windows Server
+          (IP, AD DS, DNS, DHCP... tout
+          préconfiguré)</a>
+        <ul class="sidebar-sub-headers"></ul>
+      </li>
+
+
+    </ul>
+  </section>
+</li>
+
+<li>
+  <section class="sidebar-group depth-0">
+    <p class="sidebar-heading"><span>Windows Server</span>
+      <!---->
+    </p>
+     <ul class="sidebar-links sidebar-group-items">
+      <li><a href="https://apescasio.fr/memo/ws/lastlogon" class="sidebar-link">Script pour savoir la date de 'LastLogOn' d'un utilisateur</a>
+      </li>
+
+    </ul>
+    <ul class="sidebar-links sidebar-group-items">
+      <li><a href="https://apescasio.fr/memo/ws/integration" class="sidebar-link">Script de préparation d'un PC
+          portable pour un nouveau salarié</a>
+      </li>
+
+    </ul>
+
+
+
+    <ul class="sidebar-links sidebar-group-items">
+      <li><a href="https://apescasio.fr/memo/ws/trouver-excel" class="sidebar-link">Script pour rechercher une
+          valeur dans plusieurs fichiers Excel</a>
+      </li>
+
+    </ul>
+    <ul class="sidebar-links sidebar-group-items">
+      <li><a href="https://apescasio.fr/memo/ws/migration" class="sidebar-link">Script pour faciliter la
+          migration d'un ancien PC au nouveau PC</a>
+      </li>
+
+    </ul>
+  </section>
+</li>
+<li>
+  <section class="sidebar-group depth-0">
+    <p class="sidebar-heading open"><span>Virtual Private Server</span>
+      <!---->
+    </p>
+    <ul class="sidebar-links sidebar-group-items">
+      <li><a href="https://apescasio.fr/memo/vps/prep" class="sidebar-link">Script pour préparer et sécuriser
+          son VPS</a>
+        <ul class="sidebar-sub-headers"></ul>
+      </li>
+
+
+    </ul>
+    <ul class="sidebar-links sidebar-group-items">
+      <li><a href="https://apescasio.fr/memo/vps/web" class="sidebar-link">Script pour mettre en place un
+          serveur web NGINX et héberger son site web</a>
+        <ul class="sidebar-sub-headers"></ul>
+      </li>
+
+
+    </ul>
+  </section>

@@ -1,0 +1,5 @@
+Computer;IP
+freenas;172.23.2.3
+iSCSI-FNAS;172.23.4.2
+NFS-FNAS;172.23.5.2
+vyos;172.23.2.1
